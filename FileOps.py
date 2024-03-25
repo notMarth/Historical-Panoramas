@@ -24,3 +24,19 @@ def convertGrey(im):
     
     except:
         return im
+    
+
+# feather the two images together where they share common points
+# Idea: grab the distance between the furthest points and use that to determine
+# the amount of feathering at each pixel
+def feather(panA, panB):
+    pass
+    # common = np.nonzero(panA != 0 * panB != 0)
+    # largest = np.max(np.lingalg.norm(common, axis=1))
+    # smallest = np.min(np.linalg.norm(common, axis=1))
+
+    # rate = largest/smallest
+
+    # panorama = panA + panB
+    # for i in range(len(common[0])//2):
+    #     panorama(common[:, i]) = panorama(common[:, i])*rate
