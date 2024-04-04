@@ -4,7 +4,6 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
-import mask
 
 imurl = "MED PATCH"
 imNum = 10
